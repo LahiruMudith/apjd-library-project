@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java.mvc.javamvc.Controllers.IssueMenuController">
+   <children>
+      <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="24.0" layoutY="24.0" onMouseClicked="#Back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Back.png" />
+         </image>
+      </ImageView>
+      <Text fill="RED" layoutX="223.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISSUE BOOK">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtIssueBookId" layoutX="30.0" layoutY="89.0" onAction="#BookID" prefHeight="40.0" prefWidth="210.0" promptText="Issue Book ID" style="-fx-background-radius: 9px;" />
+      <TextField fx:id="txtIssueMemberId" layoutX="376.0" layoutY="89.0" onAction="#MemberId" prefHeight="40.0" prefWidth="210.0" promptText="Member ID" style="-fx-background-radius: 9px;" />
+      <TextField fx:id="txtMemberName" layoutX="377.0" layoutY="182.0" prefHeight="32.0" prefWidth="210.0" promptText="Member Name" style="-fx-background-radius: 9px;" />
+      <TextField fx:id="txtMemberEmail" layoutX="377.0" layoutY="224.0" prefHeight="32.0" prefWidth="210.0" promptText="Member Email" style="-fx-background-radius: 9px;" />
+      <TextField fx:id="txtMemberAddress" layoutX="377.0" layoutY="266.0" prefHeight="32.0" prefWidth="210.0" promptText="Member Address" style="-fx-background-radius: 9px;" />
+      <TextField fx:id="txtMemberContactNumber" layoutX="377.0" layoutY="308.0" prefHeight="32.0" prefWidth="210.0" promptText="Member Contact Number" style="-fx-background-radius: 9px;" />
+      <Button layoutX="248.0" layoutY="347.0" mnemonicParsing="false" onAction="#IssueBook" prefHeight="40.0" prefWidth="123.0" style="-fx-background-radius: 15px; -fx-background-color: #27ae60;" text="Issue Book" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txtBookName" layoutX="31.0" layoutY="181.0" prefHeight="32.0" prefWidth="210.0" promptText="Book Name" style="-fx-background-radius: 9px;" />
+      <TextField fx:id="txtBookIsbm" layoutX="31.0" layoutY="223.0" prefHeight="32.0" prefWidth="210.0" promptText="Book ISBM" style="-fx-background-radius: 9px;" />
+      <TextField fx:id="txtBookQty" layoutX="31.0" layoutY="265.0" prefHeight="32.0" prefWidth="210.0" promptText="Book QTY" style="-fx-background-radius: 9px;" />
+      <TextField fx:id="txtBookPrice" layoutX="31.0" layoutY="307.0" prefHeight="32.0" prefWidth="210.0" promptText="Book Price" style="-fx-background-radius: 9px;" />
+   </children>
+</AnchorPane>

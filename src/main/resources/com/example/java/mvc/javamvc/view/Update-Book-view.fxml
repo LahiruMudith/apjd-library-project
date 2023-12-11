@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java.mvc.javamvc.Controllers.BookUpdateController">
+   <children>
+      <Text fill="RED" layoutX="195.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UPDATE BOOK">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#Back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Back.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtSearchBookId" layoutX="39.0" layoutY="75.0" prefHeight="38.0" prefWidth="364.0" promptText="Search Update Book ID" style="-fx-background-radius: 9px;" />
+      <Button layoutX="417.0" layoutY="78.0" mnemonicParsing="false" onAction="#Search" prefHeight="32.0" prefWidth="98.0" style="-fx-background-radius: 15px; -fx-background-color: #1e90ff;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txtUpdateBookId" layoutX="89.0" layoutY="134.0" prefHeight="32.0" prefWidth="422.0" promptText="Book ID" style="-fx-background-radius: 9px;" />
+      <TextField fx:id="txtUpdateBookName" layoutX="89.0" layoutY="176.0" prefHeight="32.0" prefWidth="422.0" promptText="Book Name" style="-fx-background-radius: 9px;" />
+      <TextField fx:id="txtUpdateBookIsbm" layoutX="88.0" layoutY="218.0" prefHeight="32.0" prefWidth="422.0" promptText="Book ISBM" style="-fx-background-radius: 9px;" />
+      <TextField fx:id="txtUpdateBookQty" layoutX="89.0" layoutY="260.0" prefHeight="32.0" prefWidth="422.0" promptText="Book QTY" style="-fx-background-radius: 9px;" />
+      <TextField fx:id="txtUpdateBookPrice" layoutX="89.0" layoutY="302.0" prefHeight="32.0" prefWidth="422.0" promptText="Book Price" style="-fx-background-radius: 9px;" />
+      <Button layoutX="246.0" layoutY="340.0" mnemonicParsing="false" onAction="#UpdateBook" prefHeight="38.0" prefWidth="108.0" style="-fx-background-radius: 15px; -fx-background-color: #ff7f50;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

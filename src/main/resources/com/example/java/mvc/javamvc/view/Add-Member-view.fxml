@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java.mvc.javamvc.Controllers.AddMemberController">
+   <children>
+      <Text fill="RED" layoutX="205.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Member">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtMemberID" layoutX="83.0" layoutY="94.0" prefHeight="32.0" prefWidth="446.0" promptText="New Member ID" style="-fx-background-radius: 9px;" />
+      <TextField fx:id="txtMemberName" layoutX="83.0" layoutY="140.0" prefHeight="32.0" prefWidth="446.0" promptText="New Member Name" style="-fx-background-radius: 9px;" />
+      <TextField fx:id="txtMemberEmail" layoutX="83.0" layoutY="187.0" prefHeight="32.0" prefWidth="446.0" promptText="New Member Email" style="-fx-background-radius: 9px;" />
+      <TextField fx:id="txtMemberAddress" layoutX="83.0" layoutY="234.0" prefHeight="32.0" prefWidth="446.0" promptText="New Member Address" style="-fx-background-radius: 9px;" />
+      <TextField fx:id="txtMemberContactNumber" layoutX="83.0" layoutY="281.0" prefHeight="32.0" prefWidth="446.0" promptText="New Member Contact Number" style="-fx-background-radius: 9px;" />
+      <Button layoutX="241.0" layoutY="329.0" mnemonicParsing="false" onAction="#AddMember" prefHeight="40.0" prefWidth="129.0" style="-fx-background-radius: 15px; -fx-background-color: #27ae60;" text="Add Member" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="14.0" layoutY="12.0" onMouseClicked="#Back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
